@@ -1,0 +1,137 @@
+
+* {
+    font-family: georgia, serif ;
+    font-size: 24px;
+    /* border: solid 10px red; */
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: bolder;
+}
+h2 {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 125%;
+    font-weight: bold;
+    color: black;
+    background-color: #555555;
+}
+
+header {
+    display: flex;
+    background: #ad9590;
+    justify-self: stretch;
+    justify-content: space-between;
+}
+
+header div {
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-self: start;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.about-me {
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-self: stretch;
+    font-size: 32px;
+    flex-basis: 80%;
+}
+
+
+/* how can i get this damn image to resize with the rest of it */
+.about-me figure{
+    flex-basis: 30%;
+    justify-self: end;
+}
+
+/* .about-me figure img {
+    height: 100%;
+} */
+
+article{
+    color: white;
+    flex-basis: 70%;
+}
+
+main {
+    width: 100%;
+}
+
+.main-app{
+    width: 80%;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.main-app-left{
+    display: flex;
+    flex-basis: 20%;
+    height: 300px;
+    justify-self: stretch;
+}
+
+.main-app-right{
+    display: flex;
+    flex-basis: 80%;
+    height: 300px;
+    justify-items: stretch;
+    /* overflow: hidden; */
+}
+
+.main-app-right img{
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
+.other-apps{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.other-apps div{
+    flex-basis: 30%;
+    height: 300px;
+    background-color: blue;
+    border: solid 10px black;
+}
+
+.other-apps div h3{
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+    .main-app {
+        flex-direction: row;
+    }
+    .about-me {
+        flex-direction: row;
+    }
+    .other-apps {
+        flex-direction: row;
+    }
+
+}
