@@ -1,7 +1,8 @@
 
 * {
     font-family: georgia, serif ;
-    font-size: 24px;
+    font-size: 16px;
+    box-sizing: border-box;
     /* border: solid 10px red; */
 }
 
@@ -16,6 +17,7 @@ h1 {
 h2 {
     font-size: 200%;
     font-weight: bold;
+    color: white;
 }
 
 h3 {
@@ -30,12 +32,13 @@ header {
     background: #ad9590;
     justify-self: stretch;
     justify-content: space-between;
+    border-top: 25px;
 }
 
 header div {
     margin-left: 10px;
     margin-top: 10px;
-    justify-self: start;
+    /* justify-self: start; */
 }
 
 nav {
@@ -48,22 +51,23 @@ nav {
 .about-me {
     background-color: black;
     display: flex;
-    flex-direction: column-reverse;
-    justify-self: stretch;
-    font-size: 32px;
-    flex-basis: 80%;
+    flex-direction: column;
+    align-content: center;
+    justify-items: start;
 }
 
 
 /* how can i get this damn image to resize with the rest of it */
 .about-me figure{
-    flex-basis: 30%;
-    justify-self: end;
+    width: 100%;
+    height: 500px;
 }
 
-/* .about-me figure img {
-    height: 100%;
-} */
+#about-me-pic {
+    background-image: url(../picme.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
 article{
     color: white;
@@ -75,41 +79,27 @@ main {
 }
 
 .main-app{
-    width: 80%;
-    display: flex;
-    /* flex-direction: column; */
-}
-
-.main-app-left{
-    display: flex;
-    flex-basis: 20%;
+    width: 100%;
     height: 300px;
-    justify-self: stretch;
 }
 
-.main-app-right{
-    display: flex;
-    flex-basis: 80%;
+.main-app-pic{
+    width: 100%;
     height: 300px;
-    justify-items: stretch;
-    /* overflow: hidden; */
-}
-
-.main-app-right img{
-    object-fit: cover;
-    /* overflow: hidden; */
+    background-image: url(../ferris.JPG);
+    background-size: cover;
 }
 
 .other-apps{
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-content: stretch;
     display: flex;
 }
 
 .other-apps div{
-    flex-basis: 30%;
-    height: 300px;
+    /* flex-basis: 50%; */
+    height: 200px;
     background-color: blue;
     border: solid 10px black;
 }
@@ -120,18 +110,58 @@ main {
     right: 0px;
 }
 
+.plantlife{
+    background-image: url(../plantlife.JPG);
+    background-size: cover;
+}
+
+.steel1{
+    background-image: url(../steel1.JPG);
+    background-size: cover;
+}
+
+.steel2{
+    background-image: url(../steel2.JPG);
+    background-size: cover;
+}
+
+.scaffold{
+    background-image: url(../scaffold.JPG);
+    background-size: cover;
+}
+
 @media screen and (min-width: 768px) {
+    * {
+        font-size: 24px;
+    }
+    .about-me {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: normal;
+        justify-content: stretch;
+    }
+
+    .about-me figure {
+        width: 30%;
+        height: 300px;
+    }
+    
     main {
         flex-direction: row;
     }
     .main-app {
         flex-direction: row;
+        justify-content: space-between;
     }
-    .about-me {
-        flex-direction: row;
+    .main-app-left{
+        flex-basis: 20%;
     }
     .other-apps {
         flex-direction: row;
+        justify-content: space-around;
+    }
+    .other-apps div{
+        flex-basis: 50%;
     }
 
 }
