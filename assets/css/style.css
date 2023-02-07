@@ -20,7 +20,7 @@ h1 {
     font-weight: bolder;
 }
 h2 {
-    font-size: 200%;
+    font-size: 40px;
     font-weight: bold;
     color: var(--light);
 }
@@ -201,6 +201,7 @@ footer div{
     }
     .other-apps div{
         flex-basis: 50%;
+        height: 300px;
     }
 
 }
