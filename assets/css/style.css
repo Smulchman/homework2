@@ -58,7 +58,7 @@ nav {
 
 .about-me {
     /* background-color: #587b63; */
-    background-image: linear-gradient(#55765f, #445e4c);
+    background-image: linear-gradient(#55765f, #396546);
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -95,7 +95,7 @@ main {
 
 .main-app-pic{
     width: 100%;
-    height: 300px;
+    height: 100%;
     background-image: url(../plantlife.JPG);
     background-size: cover;
     box-shadow: inset 0px 5px 5px var(--darkest);
@@ -108,14 +108,13 @@ main {
     display: flex;
 }
 
-.other-apps div{
-    /* flex-basis: 50%; */
+.other-apps a{
     box-shadow: inset 0px 5px 5px var(--darkest);
     height: 200px;
     border: solid 10px var(--dark);
 }
 
-.other-apps div h3{
+.other-apps a h3{
     position: relative;
     top: 0px;
     right: 0px;
@@ -153,13 +152,6 @@ main {
     justify-content: space-between;
 }
 
-/* footer{
-    color: var(--light);
-    background-image: linear-gradient(180deg, var(--dark), var(--darkest));
-    display: flex;
-    justify-content: space-between;
-} */
-
 footer div{
     flex-basis: 50%;
     margin-left: 10px;
@@ -189,13 +181,7 @@ footer div{
     main {
         flex-direction: row;
     }
-    .main-app {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .main-app-left{
-        flex-basis: 20%;
-    }
+
     .main-app-pic{
         height: 400px;
     }
@@ -203,7 +189,7 @@ footer div{
         flex-direction: row;
         justify-content: space-around;
     }
-    .other-apps div{
+    .other-apps a{
         flex-basis: 50%;
         height: 300px;
     }
