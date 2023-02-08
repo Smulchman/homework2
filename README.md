@@ -5,6 +5,7 @@ The homework assignment for week 1
 
 This project was designed to serve as a landing or home page for a personal portfolio. It includes a brief introduction to me, including a picture of me, and it includes a series of large pictures which can link users to other things I've created. It serves as an interactive resume of sorts.
 
+![preview](https://github.com/smulchman/homework2/blob/main/preview.jpg?raw=true)
 
 ## Installation
 
