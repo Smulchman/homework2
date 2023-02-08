@@ -1,5 +1,6 @@
 # portfolio-landing-page
-The homework assignment for week 1
+
+This is the landing page for a portfolio to be used as my portfolio grows.
 
 ## Description
 
@@ -16,10 +17,13 @@ NA
 This website is intended to serve as a cursory introduction to me and I built it for personal use. Replacing the images with images of apps or other webpages and allowing a user to navigate to a dedicated page for each.
 
 You can visit the deployed site at the following URL.
+
 https://smulchman.github.io/my-portfolio-landing/
 
 ## Credits
+
 All photography by Samuel Mulcahy
+
 Site constructed by Samuel Mulcahy
 
 ## License
