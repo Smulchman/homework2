@@ -8,10 +8,6 @@ This project was designed to serve as a landing or home page for a personal port
 
 ![preview](https://github.com/smulchman/my-portfolio-landing/blob/main/assets/preview.jpg?raw=true)
 
-## Installation
-
-NA
-
 ## Usage
 
 This website is intended to serve as a cursory introduction to me and I built it for personal use. Replacing the images with images of apps or other webpages and allowing a user to navigate to a dedicated page for each.
@@ -25,7 +21,3 @@ https://smulchman.github.io/my-portfolio-landing/
 All photography by Samuel Mulcahy
 
 Site constructed by Samuel Mulcahy
-
-## License
-
-NA
