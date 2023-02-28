@@ -130,6 +130,11 @@ main {
     background-size: cover;
 }
 
+.groupie{
+    background-image: url(../groupiegang.png);
+    background-size: cover;
+}
+
 .steel1{
     background-image: url(../steel1.JPG);
     background-size: cover;
